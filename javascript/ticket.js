@@ -75,7 +75,7 @@ for (const seat of seats) {
                 const applyButton = document.getElementById('coupon-btn');
                 applyButton.attributes.removeNamedItem('disabled');
                 applyButton.addEventListener('click', function () {
-                    const discountPrice = (selectedTotalPrice * 20) / 100;
+                    const discountPrice = (TotalPrice * 20) / 100;
                     const grandPrice = TotalPrice - discountPrice;
                     setInnerText('grand-price', grandPrice);
                     document.getElementById('coupon-apply').classList.add('hidden');
